@@ -269,13 +269,14 @@ export function DOMProxy<
                 )
             }
             undoEffects(node)
-            reObserve(false)
             if (node === null || node === undefined) {
                 current = defaultCurrent
+                reObserve(false)
                 if (virtualBefore) virtualBefore.remove()
                 if (virtualAfter) virtualAfter.remove()
             } else {
                 current = node
+                reObserve(false)
                 if (virtualAfter && current instanceof Element) current.after(virtualAfter)
                 if (virtualBefore && current instanceof Element) current.before(virtualBefore)
                 redoEffects()
