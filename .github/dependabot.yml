@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - jack-works
+  versioning-strategy: increase-if-necessary
+  ignore:
+  - dependency-name: "@servie/events"
+    versions:
+    - 2.0.1
