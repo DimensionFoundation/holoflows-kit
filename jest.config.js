@@ -1,5 +1,6 @@
-module.exports = {
-    preset: 'ts-jest',
-    testEnvironment: 'node',
-    roots: ['./src/'],
+const jestConfig = {
+  preset: 'ts-jest',
+  testEnvironment: 'node'
 }
+
+export default jestConfig
