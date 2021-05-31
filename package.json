@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@servie/events": "^1.0.0",
-    "async-call-rpc": "^4.2.1",
+    "async-call-rpc": "^5.1.0",
     "event-iterator": "^2.0.0",
     "jsx-jsonml-devtools-renderer": "^1.4.3",
     "lodash-es": "^4.17.15",
